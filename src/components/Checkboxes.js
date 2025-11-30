@@ -19,6 +19,10 @@ export default function Checkboxes({ people }) {
             fullMatrix[i][i] = null;
         }
 
+        fullMatrix[2][5] = null;
+        fullMatrix[5][2] = null;
+        fullMatrix[7][2] = null;
+
         setMatrix(fullMatrix)
     }
 
@@ -37,7 +41,6 @@ export default function Checkboxes({ people }) {
     const fullCheck = (y, x) => {
         if (matrix[y][x] === false) {
             for (let top = y + 1; top < people.length; top++) {
-                console.log(top)
                 check(top, x, null);
                 // if (matrix[top, x] === false) {
                 // }

@@ -6,7 +6,7 @@ import Checkboxes from './components/Checkboxes';
 function App() {
   return (
     <div className="App">
-      <Checkboxes people={["Pesho", "Kiro", "Gosho", "Asen", "Cura"]} />
+      <Checkboxes people={["John", "Timmy", "Olivia", "Jason", "Cyril", "Selena", "Vasko", "Helena"]} />
     </div>
   );
 }
